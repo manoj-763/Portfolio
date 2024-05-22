@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2894f28858.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a class="logo"><span class="p">P</span>ortfolio.</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-container">
+                <div class="header-text">
+                    <p>Hello,</p>
+                    <h1>I'm <span>Manoj</span><br /> I'm a Full Stack Developer</h1>
+                    <h4 style="margin-top: 5%;">I build things for Web</h4>
+                </div>
+                <div class="right-image">
+                    <img class="right-side-image" src="images/right-side-image.png" />
+                </div>
+                <div>
+                    <img class="small-device" src="images/right-side-image.png" />
+                </div>
+            </div>
+            <div class="small-header-container">
+                <div>
+                    <img class="small-device" src="images/right-side-image.png" />
+                </div>
+                <div class="header-text">
+                    <p>Hello,</p>
+                    <h1>I'm <span>Manoj</span><br /> I'm a Full Stack Developer</h1>
+                    <h4 style="margin-top: 5%; font-style: normal;">I build things for Web</h4>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------About------------->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img src="images/right-side-image.png" />
+                </div> -->
+                <div class="about-col-1">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>I’m a Full Stack Developer with a strong foundation in HTML, CSS, JavaScript, Bootstrap, SQL,
+                        MongoDB, Node.js, Express.js, ReactJS. I’m passionate about using these skills to
+                        develop innovative web applications that are user-friendly. I’m always eager to learn more about
+                        web development and marketing. I enjoy the challenge of coding and solving real-world problems.
+                        Currently, I’m looking for opportunities to join a team that values innovation and shares my
+                        enthusiasm for technology.
+                    </p>
+                    <div class="tab-tittles">
+                        <div class="tab-links active-link" onclick="opentab(event,'skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab(event,'experience')">Technical Skills</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br />Designing web/ App interfaces</li>
+                            <li><span>Web Development</span><br />Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Front-End Technologies</span><br />Html, Css, Bootstrap, JavaScript, React</li>
+                            <li><span>Backend Technologies and Frameworks</span><br />Python, Express, NodeJs</li>
+                            <li><span>Database</span><br />Sql-Lite, MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------Services------------>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>As a web developer, I create dynamic and functional websites using a combination of front-end and
+                        back-end technologies. I specialize in building responsive, user-friendly interfaces that
+                        enhance the user experience. Whether it’s an e-commerce site, a blog, or a custom web
+                        application, I bring ideas to life through code.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI Development</h2>
+                    <p>UI (User Interface) development focuses on creating the visual elements of a website or
+                        application. I specialize in turning design mockups into interactive interfaces using HTML, CSS,
+                        and JavaScript. My goal is to ensure that users have a seamless and enjoyable experience while
+                        interacting with your product.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>UI Designing</h2>
+                    <p>UI design is all about aesthetics and usability. As a UI designer, I craft visually appealing
+                        layouts, choose color schemes, and create intuitive navigation. I pay attention to details like
+                        typography, spacing, and consistency. My designs aim to enhance the overall look and feel of
+                        your digital product.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" />
+                    <div class="layer">
+                        <h3>Nxt-Trendz E-commerce App</h3>
+                        <p>NxT Trendx is a E-Commerce website built using ReactJS. It's replica of Flipkart or Amazon.
+                            Username: rahul, Password: rahul@2021
+                        </p>
+                        <a href="https://nxttecom.ccbp.tech/login" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" />
+                    <div class="layer">
+                        <h3>Food Much App</h3>
+                        <p>Food Much was built using HTML, CSS, Flex-box. Food Much is a Responsive Food Delivery App.
+                        </p>
+                        <a href="https://manojkr.ccbp.tech/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" />
+                    <div class="layer">
+                        <h3>Guess Number App</h3>
+                        <p>Guess Number is game app.It is develope by using Html, css, JavaScript</p>
+                        <a href="https://guesspuzzlegame.ccbp.tech/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn">See more</a>
+    </div>
+    </div>
+
+    <!---------------Contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mk7631.kr@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-987456321</p>
+                    <div class="social-icon">
+                        <a href="" target="_blank" ><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/manoj-kumar7631/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/manoj-763" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>copy-right <i class="fa-regular fa-copyright"></i> Manoj Made with <i class="fas fa-heart"></i> by Manoj
+                Coder</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
